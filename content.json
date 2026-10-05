@@ -1,0 +1,243 @@
+{
+  "name": "Haoye Qiu",
+  "chineseName": "裘昊晔",
+  "lastUpdated": "2026-10-05",
+  "email": "qhy@seu.edu.cn",
+  "github": "https://github.com/haoyeqiu",
+  "scholar": "https://scholar.google.com/citations?user=Fl3ulDUAAAAJ&hl=zh-TW",
+  "scholarLabel": "Google Scholar",
+  "orcid": "https://orcid.org/0000-0001-6056-2070",
+  "photo": "images/haoye-qiu.jpg",
+  "honors": [
+    {
+      "date": "2025-06",
+      "title": "Student of the Year Award (年度人物标兵), Hainan University",
+      "links": [
+        { "label": "Profile", "url": "https://cmc.hainanu.edu.cn/info/1012/5176.htm" },
+        { "label": "Award Ceremony", "url": "https://student.hainanu.edu.cn/info/1009/14166.htm" },
+        { "label": "Video", "url": "https://mp.weixin.qq.com/s/qG9hx6PDD8mzZ1jPUhrXMw" }
+      ]
+    },
+    {
+      "date": "2025-06",
+      "title": "Outstanding Graduate (优秀毕业生), Hainan University",
+      "links": [
+        { "label": "Announcement", "url": "https://student.hainanu.edu.cn/info/1008/14156.htm" }
+      ]
+    },
+    {
+      "date": "2025-06",
+      "title": "Outstanding Undergraduate Thesis (优秀毕业论文), Hainan University",
+      "links": [
+        { "label": "Announcement", "url": "https://jwc.hainanu.edu.cn/info/2650/22495.htm" }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Mismatch-Free One-Step at Scale: Linear-Time Ensemble Clustering with Soft Balancing",
+      "authors": "Haoye Qiu, Xu Zhang, Ding Ding, Yuheng Jia",
+      "venue": "IEEE International Conference on Data Engineering (ICDE), 2027",
+      "badge": "ICDE 2027",
+      "category": "Ensemble Clustering",
+      "url": "https://github.com/haoyeqiu/OLEC-SB/blob/main/supplemental%20material/Supplemental%20Material%20of%20OLEC-SB.pdf",
+      "code": "https://github.com/haoyeqiu/OLEC-SB",
+      "rankings": [
+        {
+          "label": "CCF A类会议",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/DM_CS/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        }
+      ],
+      "recognition": [
+        "Oral",
+        "Strong Accept"
+      ]
+    },
+    {
+      "title": "A Comprehensive Survey of Ensemble Clustering: Taxonomies, Methodologies, Experimental Benchmark, and Challenges",
+      "authors": "Xu Zhang*, Haoye Qiu*, Henghui Jiang*, Panyu Wang, Yuheng Jia, Hui Liu, Junhui Hou",
+      "authorNote": "* Equal contribution (co-first authors).",
+      "venue": "Submitted to ACM Computing Surveys",
+      "badge": "Under review",
+      "status": "Under review",
+      "category": "Ensemble Clustering",
+      "url": "https://github.com/haoyeqiu/Ensemble-Clustering-Review/blob/main/A%20Comprehensive%20Survey%20of%20Ensemble%20Clustering.pdf",
+      "code": "https://github.com/haoyeqiu/Ensemble-Clustering-Review",
+      "rankings": [
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=19",
+          "edition": "2025年升级版",
+          "detail": "ACM Computing Surveys 投稿目标期刊信息，稿件状态仍为 Under review。"
+        },
+        {
+          "label": "IF 30.4 (JCR 2026)",
+          "source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf",
+          "detail": "2026年发布的 JCR 期刊影响因子表中，ACM Computing Surveys 为30.4。"
+        }
+      ]
+    },
+    {
+      "title": "Reliable Co-Occurrence Guided Partial Clustering Ensemble",
+      "authors": "Te Qi, Haoye Qiu, Yuheng Jia, Xiao Shi, Ran Wang",
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems, 2026",
+      "badge": "TNNLS 2026",
+      "category": "Ensemble Clustering",
+      "url": "https://doi.org/10.1109/TNNLS.2026.3727651",
+      "code": "https://github.com/haoyeqiu/Reliable-Co-occurrence-Guided-Partial-Clustering-Ensemble",
+      "rankings": [
+        {
+          "label": "CCF B类期刊",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        },
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=8837",
+          "detail": "2026年发表；中科院分区表自2026年停止更新，沿用最后的2025年3月升级版。",
+          "evidenceSource": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=8837",
+          "edition": "2025年3月升级版",
+          "publicationYear": 2026
+        }
+      ]
+    },
+    {
+      "title": "Generalization Performance of Ensemble Clustering: From Theory to Algorithm",
+      "authors": "Xu Zhang, Haoye Qiu, Weixuan Liang, Hui Liu, Junhui Hou, Yuheng Jia",
+      "venue": "International Conference on Machine Learning (ICML), PMLR 267: 75901–75927, 2025",
+      "badge": "ICML 2025",
+      "recognition": ["Poster"],
+      "poster": "https://icml.cc/virtual/2025/poster/46061",
+      "category": "Ensemble Clustering",
+      "url": "https://proceedings.mlr.press/v267/zhang25bl.html",
+      "code": "https://github.com/haoyeqiu/GPEC",
+      "rankings": [
+        {
+          "label": "CCF A类会议",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        }
+      ]
+    },
+    {
+      "title": "L2-regularization based two-way weighted neutrosophic clustering with Manhattan and Euclidean distances",
+      "authors": "Haoye Qiu, Zhe Liu, Haojian Huang, Sukumar Letchmunan, Muhammet Deveci, Tapan Senapati",
+      "venue": "Fuzzy Sets and Systems, 518: 109507, 2025",
+      "badge": "FSS 2025",
+      "category": "Multi-view & Uncertainty-aware Clustering",
+      "url": "https://doi.org/10.1016/j.fss.2025.109507",
+      "rankings": [
+        {
+          "label": "CCF C类期刊",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        },
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2978",
+          "detail": "历史分区：2021年12月基础版数学大类一区 Top；2025年升级版为二区 Top。",
+          "evidenceSource": "https://sci.justscience.cn/details.html?id=3092&sci=1",
+          "edition": "2021年12月基础版（数学大类）",
+          "publicationYear": 2025
+        }
+      ]
+    },
+    {
+      "title": "Robust multi-view fuzzy clustering with exponential transformation and automatic view weighting",
+      "authors": "Zhe Liu, Haoye Qiu, Muhammet Deveci, Sukumar Letchmunan, Luis Martínez",
+      "venue": "Knowledge-Based Systems, 315: 113314, 2025",
+      "badge": "KBS 2025",
+      "category": "Multi-view & Uncertainty-aware Clustering",
+      "url": "https://doi.org/10.1016/j.knosys.2025.113314",
+      "rankings": [
+        {
+          "label": "CCF C类期刊",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        },
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=5495",
+          "detail": "按2025年正式发表年份对应的中科院2025年3月升级版大类分区标注。",
+          "evidenceSource": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=5495",
+          "edition": "2025年3月升级版",
+          "publicationYear": 2025
+        }
+      ],
+      "publicationDate": "2025-04-22"
+    },
+    {
+      "title": "Multi-view neutrosophic c-means clustering algorithms",
+      "authors": "Zhe Liu, Haoye Qiu, Muhammet Deveci, Witold Pedrycz, Patrick Siarry",
+      "venue": "Expert Systems with Applications, 260: 125454, 2025",
+      "badge": "ESWA 2025",
+      "category": "Multi-view & Uncertainty-aware Clustering",
+      "url": "https://doi.org/10.1016/j.eswa.2024.125454",
+      "rankings": [
+        {
+          "label": "CCF C类期刊",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        },
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2799",
+          "detail": "按2025年正式发表年份对应的中科院2025年3月升级版大类分区标注。",
+          "evidenceSource": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2799",
+          "edition": "2025年3月升级版",
+          "publicationYear": 2025
+        }
+      ],
+      "publicationDate": "2025-01-15"
+    },
+    {
+      "title": "Multi-view evidential c-means clustering with view-weight and feature-weight learning",
+      "authors": "Zhe Liu, Haoye Qiu, Sukumar Letchmunan, Muhammet Deveci, Laith Abualigah",
+      "venue": "Fuzzy Sets and Systems, 498: 109135, 2025",
+      "badge": "FSS 2025",
+      "category": "Multi-view & Uncertainty-aware Clustering",
+      "url": "https://doi.org/10.1016/j.fss.2024.109135",
+      "rankings": [
+        {
+          "label": "CCF C类期刊",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        },
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2978",
+          "detail": "历史分区：2021年12月基础版数学大类一区 Top；2025年升级版为二区 Top。",
+          "evidenceSource": "https://sci.justscience.cn/details.html?id=3092&sci=1",
+          "edition": "2021年12月基础版（数学大类）",
+          "publicationYear": 2025
+        }
+      ],
+      "publicationDate": "2025-01-01"
+    },
+    {
+      "title": "Enhancements of evidential c-means algorithms: A clustering framework via feature-weight learning",
+      "authors": "Zhe Liu, Haoye Qiu, Tapan Senapati, Mingwei Lin, Laith Abualigah, Muhammet Deveci",
+      "venue": "Expert Systems with Applications, 259: 125246, 2025",
+      "badge": "ESWA 2025",
+      "category": "Multi-view & Uncertainty-aware Clustering",
+      "url": "https://doi.org/10.1016/j.eswa.2024.125246",
+      "rankings": [
+        {
+          "label": "CCF C类期刊",
+          "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+          "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
+        },
+        {
+          "label": "SCI · 中科院一区 Top",
+          "source": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2799",
+          "detail": "按2025年正式发表年份对应的中科院2025年3月升级版大类分区标注。",
+          "evidenceSource": "https://www.letpub.com.cn/index.php?page=journalapp&view=detail&journalid=2799",
+          "edition": "2025年3月升级版",
+          "publicationYear": 2025
+        }
+      ],
+      "publicationDate": "2025-01-01"
+    }
+  ]
+}
