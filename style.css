@@ -9,3 +9,5 @@
 .site-updated{margin:8px 0 0}
 .research-interests{padding-left:25px;margin:0 0 18px}.research-interests li{margin:10px 0;padding-left:2px}.current-focus{font-weight:600;color:#494e52}
 .news-bullets{list-style:disc;padding-left:25px}.news-bullets li{display:list-item;margin:13px 0;padding-left:2px}.news-bullets time{font-size:inherit;font-style:italic;color:inherit}
+
+.research-stage{font-size:.875rem;font-weight:400;color:var(--muted)}
