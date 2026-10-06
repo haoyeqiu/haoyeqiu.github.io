@@ -100,7 +100,9 @@
     {
       "title": "Reliable Co-Occurrence Guided Partial Clustering Ensemble",
       "authors": "Te Qi, Haoye Qiu, Yuheng Jia, Xiao Shi, Ran Wang",
-      "correspondingAuthors": ["Yuheng Jia"],
+      "correspondingAuthors": [
+        "Yuheng Jia"
+      ],
       "venue": "IEEE Transactions on Neural Networks and Learning Systems, 2026",
       "badge": "TNNLS 2026",
       "category": "Ensemble Clustering",
@@ -167,7 +169,10 @@
           "publicationYear": 2025
         }
       ],
-      "studentFirstAuthor": true
+      "studentFirstAuthor": true,
+      "correspondingAuthors": [
+        "Zhe Liu"
+      ]
     },
     {
       "title": "Robust multi-view fuzzy clustering with exponential transformation and automatic view weighting",
@@ -192,7 +197,10 @@
         }
       ],
       "publicationDate": "2025-04-22",
-      "studentFirstAuthor": true
+      "studentFirstAuthor": true,
+      "correspondingAuthors": [
+        "Zhe Liu"
+      ]
     },
     {
       "title": "Multi-view neutrosophic c-means clustering algorithms",
@@ -217,7 +225,10 @@
         }
       ],
       "publicationDate": "2025-01-15",
-      "studentFirstAuthor": true
+      "studentFirstAuthor": true,
+      "correspondingAuthors": [
+        "Zhe Liu"
+      ]
     },
     {
       "title": "Multi-view evidential c-means clustering with view-weight and feature-weight learning",
@@ -242,7 +253,10 @@
         }
       ],
       "publicationDate": "2025-01-01",
-      "studentFirstAuthor": true
+      "studentFirstAuthor": true,
+      "correspondingAuthors": [
+        "Zhe Liu"
+      ]
     },
     {
       "title": "Enhancements of evidential c-means algorithms: A clustering framework via feature-weight learning",
@@ -267,7 +281,10 @@
         }
       ],
       "publicationDate": "2025-01-01",
-      "studentFirstAuthor": true
+      "studentFirstAuthor": true,
+      "correspondingAuthors": [
+        "Zhe Liu"
+      ]
     }
   ]
 }

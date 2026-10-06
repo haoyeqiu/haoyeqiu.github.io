@@ -23,7 +23,7 @@ const icon = name => {
 const authorLine = p => p.authors.split(', ').map(name => {
   const baseName = name.replace(/\*$/, '');
   const label = baseName === 'Haoye Qiu' ? `<strong>${esc(name)}</strong>` : esc(name);
-  return label + (p.correspondingAuthors?.includes(baseName) ? '<sup title="Corresponding author">†</sup>' : '');
+  return label + (p.correspondingAuthors?.includes(baseName) ? '<sup title="Corresponding author">†</sup>' : '') + (p.studentFirstAuthor && baseName === 'Haoye Qiu' ? '<sup title="First student author">‡</sup>' : '');
 }).join(', ');
 const paper = p => `<article${p.id ? ` id="${esc(p.id)}"` : ''} class="paper${p.image ? ' illustrated' : ''}">
   ${p.image ? `<a class="paper-image" href="${esc(p.url)}"><span class="image-badge">${esc(p.badge)}</span><img src="${esc(p.image)}" alt="${esc(p.imageAlt)}" width="975" height="300" loading="lazy"></a>` : ''}
@@ -31,7 +31,7 @@ const paper = p => `<article${p.id ? ` id="${esc(p.id)}"` : ''} class="paper${p.
   <h4>${link(p.url, esc(p.title))}</h4>
   <p class="authors">${authorLine(p)}.</p>
   ${p.authorNote ? `<p class="author-note">${esc(p.authorNote)}</p>` : ''}
-  ${p.studentFirstAuthor ? '<p class="author-note">Haoye Qiu is the first student author.</p>' : ''}
+  ${p.studentFirstAuthor ? '<p class="author-note">‡ First student author.</p>' : ''}
   ${p.correspondingAuthors?.length ? '<p class="author-note">† Corresponding author.</p>' : ''}
   <p class="venue">${esc(p.venue)}.</p>
   ${p.rankings?.length || p.recognition?.length ? `<p class="paper-ratings">${p.rankingContext ? `<span class="ranking-context">${esc(p.rankingContext)}</span>` : ''}${(p.rankings || []).map(r => `<a class="ranking-badge" href="${esc(r.source)}">${esc(r.label)}</a>`).join('')}${(p.recognition || []).map(r => r === 'Poster' && p.poster ? `<a class="ranking-badge" href="${esc(p.poster)}">${esc(r)}</a>` : `<span class="${r === 'Poster' ? 'ranking-badge' : 'recognition-badge'}">${esc(r)}</span>`).join('')}</p>` : ''}
