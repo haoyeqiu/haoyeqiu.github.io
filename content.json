@@ -1,7 +1,7 @@
 {
   "name": "Haoye Qiu",
   "chineseName": "裘昊晔",
-  "lastUpdated": "2026-10-05",
+  "lastUpdated": "2026-10-06",
   "email": "qhy@seu.edu.cn",
   "github": "https://github.com/haoyeqiu",
   "scholar": "https://scholar.google.com/citations?user=Fl3ulDUAAAAJ&hl=zh-TW",
@@ -55,6 +55,7 @@
       ]
     },
     {
+      "id": "ensemble-clustering-survey",
       "title": "A Comprehensive Survey of Ensemble Clustering: Taxonomies, Methodologies, Experimental Benchmark, and Challenges",
       "authors": "Xu Zhang*, Haoye Qiu*, Henghui Jiang*, Panyu Wang, Yuheng Jia, Hui Liu, Junhui Hou",
       "authorNote": "* Equal contribution (co-first authors).",

@@ -20,7 +20,7 @@ const icon = name => {
   };
   return `<svg class="profile-icon ${name}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${shapes[name]}</svg>`;
 };
-const paper = p => `<article class="paper${p.image ? ' illustrated' : ''}">
+const paper = p => `<article${p.id ? ` id="${esc(p.id)}"` : ''} class="paper${p.image ? ' illustrated' : ''}">
   ${p.image ? `<a class="paper-image" href="${esc(p.url)}"><span class="image-badge">${esc(p.badge)}</span><img src="${esc(p.image)}" alt="${esc(p.imageAlt)}" width="975" height="300" loading="lazy"></a>` : ''}
   <div class="paper-content"><p class="paper-meta"><span class="venue-badge">${esc(p.badge)}</span>${p.status && p.status !== p.badge ? `<span class="status">${esc(p.status)}</span>` : ''}</p>
   <h4>${link(p.url, esc(p.title))}</h4>
@@ -59,7 +59,7 @@ const html = `<!doctype html>
     <li>Neutrosophic set theory</li>
   </ul>
   </section>
-  <section id="news"><h2><span aria-hidden="true">🔥</span> News</h2><ul class="news news-bullets"><li><time datetime="2026-09">2026.09:</time> I achieved a normalized average score of <strong>84.48</strong> and ranked <strong>1/33</strong> in my major at Southeast University.</li><li><time datetime="2025-10">2025.10:</time> I received the <strong>First-Class Scholarship</strong> at Southeast University (<strong>Top 10%</strong>).</li></ul></section>
+  <section id="news"><h2><span aria-hidden="true">🔥</span> News</h2><ul class="news news-bullets"><li><time datetime="2026-09">2026.09:</time> I achieved a normalized average score of <strong>84.48</strong> and ranked <strong>1/33</strong> in my major at Southeast University.</li><li><time datetime="2026-08">2026.08:</time> I completed a <strong>comprehensive survey of ensemble clustering</strong>. See the <a href="#ensemble-clustering-survey">corresponding paper in Preprints</a> for details.</li><li><time datetime="2025-10">2025.10:</time> I received the <strong>First-Class Scholarship</strong> at Southeast University (<strong>Top 10%</strong>).</li></ul></section>
   <section id="publications"><h2><span aria-hidden="true">📘</span> Selected Publications</h2>
   ${categories.map(c => `<h3>${esc(c).replaceAll('&amp;', '<span class="ampersand">&amp;</span>')}</h3>${published.filter(p => p.category === c).map(paper).join('\n')}`).join('\n')}
   <p class="bibliography">${link(data.scholar, 'More publications on Google Scholar')}</p></section>
