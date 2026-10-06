@@ -31,8 +31,7 @@ const paper = p => `<article${p.id ? ` id="${esc(p.id)}"` : ''} class="paper${p.
   <h4>${link(p.url, esc(p.title))}</h4>
   <p class="authors">${authorLine(p)}.</p>
   ${p.authorNote ? `<p class="author-note">${esc(p.authorNote)}</p>` : ''}
-  ${p.studentFirstAuthor ? '<p class="author-note">‡ First student author.</p>' : ''}
-  ${p.correspondingAuthors?.length ? '<p class="author-note">† Corresponding author.</p>' : ''}
+  ${p.studentFirstAuthor || p.correspondingAuthors?.length ? `<p class="author-note">${[p.studentFirstAuthor ? '‡ First student author.' : '', p.correspondingAuthors?.length ? '† Corresponding author.' : ''].filter(Boolean).join(' &nbsp; ')}</p>` : ''}
   <p class="venue">${esc(p.venue)}.</p>
   ${p.rankings?.length || p.recognition?.length ? `<p class="paper-ratings">${p.rankingContext ? `<span class="ranking-context">${esc(p.rankingContext)}</span>` : ''}${(p.rankings || []).map(r => `<a class="ranking-badge" href="${esc(r.source)}">${esc(r.label)}</a>`).join('')}${(p.recognition || []).map(r => r === 'Poster' && p.poster ? `<a class="ranking-badge" href="${esc(p.poster)}">${esc(r)}</a>` : `<span class="${r === 'Poster' ? 'ranking-badge' : 'recognition-badge'}">${esc(r)}</span>`).join('')}</p>` : ''}
   <div class="paper-links">${link(p.url, 'Paper')}${p.pdf ? link(p.pdf, 'PDF') : ''}${p.code ? link(p.code, 'Code') : ''}</div></div>
