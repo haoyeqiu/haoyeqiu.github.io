@@ -20,12 +20,19 @@ const icon = name => {
   };
   return `<svg class="profile-icon ${name}" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${shapes[name]}</svg>`;
 };
+const authorLine = p => p.authors.split(', ').map(name => {
+  const baseName = name.replace(/\*$/, '');
+  const label = baseName === 'Haoye Qiu' ? `<strong>${esc(name)}</strong>` : esc(name);
+  return label + (p.correspondingAuthors?.includes(baseName) ? '<sup title="Corresponding author">†</sup>' : '');
+}).join(', ');
 const paper = p => `<article${p.id ? ` id="${esc(p.id)}"` : ''} class="paper${p.image ? ' illustrated' : ''}">
   ${p.image ? `<a class="paper-image" href="${esc(p.url)}"><span class="image-badge">${esc(p.badge)}</span><img src="${esc(p.image)}" alt="${esc(p.imageAlt)}" width="975" height="300" loading="lazy"></a>` : ''}
   <div class="paper-content"><p class="paper-meta"><span class="venue-badge">${esc(p.badge)}</span>${p.status && p.status !== p.badge ? `<span class="status">${esc(p.status)}</span>` : ''}</p>
   <h4>${link(p.url, esc(p.title))}</h4>
-  <p class="authors">${esc(p.authors).replaceAll('Haoye Qiu', '<strong>Haoye Qiu</strong>')}.</p>
+  <p class="authors">${authorLine(p)}.</p>
   ${p.authorNote ? `<p class="author-note">${esc(p.authorNote)}</p>` : ''}
+  ${p.studentFirstAuthor ? '<p class="author-note">Haoye Qiu is the first student author.</p>' : ''}
+  ${p.correspondingAuthors?.length ? `<p class="author-note">† Corresponding ${p.correspondingAuthors.length > 1 ? 'authors' : 'author'}: ${esc(p.correspondingAuthors.join(', '))}.</p>` : ''}
   <p class="venue">${esc(p.venue)}.</p>
   ${p.rankings?.length || p.recognition?.length ? `<p class="paper-ratings">${p.rankingContext ? `<span class="ranking-context">${esc(p.rankingContext)}</span>` : ''}${(p.rankings || []).map(r => `<a class="ranking-badge" href="${esc(r.source)}">${esc(r.label)}</a>`).join('')}${(p.recognition || []).map(r => r === 'Poster' && p.poster ? `<a class="ranking-badge" href="${esc(p.poster)}">${esc(r)}</a>` : `<span class="${r === 'Poster' ? 'ranking-badge' : 'recognition-badge'}">${esc(r)}</span>`).join('')}</p>` : ''}
   <div class="paper-links">${link(p.url, 'Paper')}${p.pdf ? link(p.pdf, 'PDF') : ''}${p.code ? link(p.code, 'Code') : ''}</div></div>

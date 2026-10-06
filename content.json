@@ -13,23 +13,38 @@
       "date": "2025-06",
       "title": "Student of the Year Award (年度人物标兵), Hainan University",
       "links": [
-        { "label": "Profile", "url": "https://cmc.hainanu.edu.cn/info/1012/5176.htm" },
-        { "label": "Award Ceremony", "url": "https://student.hainanu.edu.cn/info/1009/14166.htm" },
-        { "label": "Video", "url": "https://mp.weixin.qq.com/s/qG9hx6PDD8mzZ1jPUhrXMw" }
+        {
+          "label": "Profile",
+          "url": "https://cmc.hainanu.edu.cn/info/1012/5176.htm"
+        },
+        {
+          "label": "Award Ceremony",
+          "url": "https://student.hainanu.edu.cn/info/1009/14166.htm"
+        },
+        {
+          "label": "Video",
+          "url": "https://mp.weixin.qq.com/s/qG9hx6PDD8mzZ1jPUhrXMw"
+        }
       ]
     },
     {
       "date": "2025-06",
       "title": "Outstanding Graduate (优秀毕业生), Hainan University",
       "links": [
-        { "label": "Announcement", "url": "https://student.hainanu.edu.cn/info/1008/14156.htm" }
+        {
+          "label": "Announcement",
+          "url": "https://student.hainanu.edu.cn/info/1008/14156.htm"
+        }
       ]
     },
     {
       "date": "2025-06",
       "title": "Outstanding Undergraduate Thesis (优秀毕业论文), Hainan University",
       "links": [
-        { "label": "Announcement", "url": "https://jwc.hainanu.edu.cn/info/2650/22495.htm" }
+        {
+          "label": "Announcement",
+          "url": "https://jwc.hainanu.edu.cn/info/2650/22495.htm"
+        }
       ]
     }
   ],
@@ -52,6 +67,9 @@
       "recognition": [
         "Oral",
         "Strong Accept"
+      ],
+      "correspondingAuthors": [
+        "Yuheng Jia"
       ]
     },
     {
@@ -108,7 +126,9 @@
       "authors": "Xu Zhang, Haoye Qiu, Weixuan Liang, Hui Liu, Junhui Hou, Yuheng Jia",
       "venue": "International Conference on Machine Learning (ICML), PMLR 267: 75901–75927, 2025",
       "badge": "ICML 2025",
-      "recognition": ["Poster"],
+      "recognition": [
+        "Poster"
+      ],
       "poster": "https://icml.cc/virtual/2025/poster/46061",
       "category": "Ensemble Clustering",
       "url": "https://proceedings.mlr.press/v267/zhang25bl.html",
@@ -119,6 +139,9 @@
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         }
+      ],
+      "correspondingAuthors": [
+        "Yuheng Jia"
       ]
     },
     {
@@ -142,7 +165,8 @@
           "edition": "2021年12月基础版（数学大类）",
           "publicationYear": 2025
         }
-      ]
+      ],
+      "studentFirstAuthor": true
     },
     {
       "title": "Robust multi-view fuzzy clustering with exponential transformation and automatic view weighting",
@@ -166,7 +190,8 @@
           "publicationYear": 2025
         }
       ],
-      "publicationDate": "2025-04-22"
+      "publicationDate": "2025-04-22",
+      "studentFirstAuthor": true
     },
     {
       "title": "Multi-view neutrosophic c-means clustering algorithms",
@@ -190,7 +215,8 @@
           "publicationYear": 2025
         }
       ],
-      "publicationDate": "2025-01-15"
+      "publicationDate": "2025-01-15",
+      "studentFirstAuthor": true
     },
     {
       "title": "Multi-view evidential c-means clustering with view-weight and feature-weight learning",
@@ -214,7 +240,8 @@
           "publicationYear": 2025
         }
       ],
-      "publicationDate": "2025-01-01"
+      "publicationDate": "2025-01-01",
+      "studentFirstAuthor": true
     },
     {
       "title": "Enhancements of evidential c-means algorithms: A clustering framework via feature-weight learning",
@@ -238,7 +265,8 @@
           "publicationYear": 2025
         }
       ],
-      "publicationDate": "2025-01-01"
+      "publicationDate": "2025-01-01",
+      "studentFirstAuthor": true
     }
   ]
 }
