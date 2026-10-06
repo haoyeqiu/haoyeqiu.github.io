@@ -100,6 +100,7 @@
     {
       "title": "Reliable Co-Occurrence Guided Partial Clustering Ensemble",
       "authors": "Te Qi, Haoye Qiu, Yuheng Jia, Xiao Shi, Ran Wang",
+      "correspondingAuthors": ["Yuheng Jia"],
       "venue": "IEEE Transactions on Neural Networks and Learning Systems, 2026",
       "badge": "TNNLS 2026",
       "category": "Ensemble Clustering",
