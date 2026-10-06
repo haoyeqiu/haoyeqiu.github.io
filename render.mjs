@@ -59,7 +59,7 @@ const html = `<!doctype html>
     <li>Neutrosophic set theory</li>
   </ul>
   </section>
-  <section id="news"><h2><span aria-hidden="true">🔥</span> News</h2><ul class="news news-bullets"><li><time datetime="2026-09">2026.09:</time> I achieved a normalized average score of <strong>84.48</strong> and ranked <strong>1/33</strong> in my major at Southeast University.</li><li><time datetime="2026-08">2026.08:</time> I completed a <strong>comprehensive survey of ensemble clustering</strong>. See <a href="#ensemble-clustering-survey">Preprints</a>.</li><li><time datetime="2025-10">2025.10:</time> I received the <strong>First-Class Scholarship</strong> at Southeast University (<strong>Top 10%</strong>).</li></ul></section>
+  <section id="news"><h2><span aria-hidden="true">🔥</span> News</h2><ul class="news news-bullets"><li><time datetime="2026-09">2026.09:</time> I achieved a normalized average score of <strong>84.48</strong> and ranked <strong>1/33</strong> in my major at Southeast University.</li><li><time datetime="2026-08">2026.08:</time> I completed a <strong>comprehensive survey of ensemble clustering</strong>. See <a href="#ensemble-clustering-survey">Preprints</a> for details.</li><li><time datetime="2025-10">2025.10:</time> I received the <strong>First-Class Scholarship</strong> at Southeast University (<strong>Top 10%</strong>).</li></ul></section>
   <section id="publications"><h2><span aria-hidden="true">📘</span> Selected Publications</h2>
   ${categories.map(c => `<h3>${esc(c).replaceAll('&amp;', '<span class="ampersand">&amp;</span>')}</h3>${published.filter(p => p.category === c).map(paper).join('\n')}`).join('\n')}
   <p class="bibliography">${link(data.scholar, 'More publications on Google Scholar')}</p></section>
