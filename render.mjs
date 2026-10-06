@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(fs.readFileSync(path.join(root, 'content.json'), 'utf8'));
+const metrics = JSON.parse(fs.readFileSync(path.join(root, 'scholar-metrics.json'), 'utf8'));
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url, label) => `<a href="${esc(url)}">${label}</a>`;
 const emailLabel = esc(data.email.replace('@', ' [at] '));
@@ -12,6 +13,7 @@ const icon = name => {
   // https://fontawesome.com/license/free — same icon and version as xuz2019.github.io/cv/.
   if (name === 'university') return '<svg class="profile-icon university" viewBox="0 0 512 512" style="color:#000" aria-hidden="true" focusable="false"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>';
   const shapes = {
+    cv: '<path d="M5 2h9l5 5v15H5V2Zm9 2v4h4l-4-4ZM8 11v2h8v-2H8Zm0 4v2h8v-2H8Zm0 4v1h6v-1H8Z"/>',
     location: '<path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>',
     email: '<path d="M2 5h20v14H2V5Zm2 2v1l8 6 8-6V7l-8 6-8-6Z"/>',
     scholar: '<path d="m12 3-12 4 12 4 12-4-12-4ZM5 10.3v6.2c3.9 2.6 10.1 2.6 14 0v-6.2L12 13l-7-2.7ZM1 9v5l-1 4h3l-1-4V9.3L1 9Z"/>',
@@ -44,12 +46,12 @@ const html = `<!doctype html>
 <meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/jpeg" href="${esc(data.photo)}">
 </head><body><a class="skip" href="#about-me">Skip to content</a>
-<header class="masthead"><nav class="topnav" aria-label="Main navigation"><a class="home" href="#about-me">Homepage</a><a href="#about-me">About Me</a><a href="#news">News</a><a href="#publications">Selected Publications</a>${underReview.length ? '<a href="#preprints">Preprints</a>' : ''}<a href="#honors-and-awards">Honors and Awards</a><a href="#education">Education</a></nav></header>
+<header class="masthead"><nav class="topnav" aria-label="Main navigation"><a class="home" href="#about-me">Homepage</a><a href="#about-me">About Me</a><a href="#news">News</a><a href="#publications">Selected Publications</a>${underReview.length ? '<a href="#preprints">Preprints</a>' : ''}<a href="#honors-and-awards">Honors and Awards</a><a href="#education">Education</a><a class="nav-cv" href="assets/files/Haoye_Qiu_CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open CV (PDF) in a new tab">${icon('cv')}<span>CV</span></a></nav></header>
 <div class="layout">
 <aside class="profile" aria-label="Haoye Qiu's profile"><div class="profile-inner">
   <div class="avatar"><img src="${esc(data.photo)}" alt="Portrait of ${esc(data.name)}" width="411" height="526"></div><h1>${esc(data.name)}${data.chineseName ? ` (${esc(data.chineseName)})` : ''}</h1>
   <p class="role">Master's Student<br>Second Year · 硕士二年级</p>
-  <ul class="profile-links"><li>${icon('university')}${link('https://www.seu.edu.cn/', 'Southeast University')}</li><li>${icon('location')}Nanjing, China</li><li>${icon('email')}${link('mailto:'+data.email, emailLabel)}</li><li>${icon('scholar')}${link(data.scholar, esc(data.scholarLabel))}</li><li>${icon('orcid')}${link(data.orcid, 'ORCID')}</li><li>${icon('github')}${link(data.github, 'GitHub')}</li><li>${icon('dblp')}${link('https://dblp.org/pid/370/6105.html', 'DBLP')}</li></ul>
+  <ul class="profile-links"><li>${icon('university')}${link('https://www.seu.edu.cn/', 'Southeast University')}</li><li>${icon('location')}Nanjing, China</li><li>${icon('email')}${link('mailto:'+data.email, emailLabel)}</li><li>${icon('scholar')}${link(data.scholar, esc(data.scholarLabel))}</li><li>${icon('orcid')}${link(data.orcid, 'ORCID')}</li><li>${icon('github')}${link(data.github, 'GitHub')}</li><li>${icon('dblp')}${link('https://dblp.org/pid/370/6105.html', 'DBLP')}</li><li>${icon('cv')}<a href="assets/files/Haoye_Qiu_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li></ul>
   <div class="profile-affiliation"><a href="http://palm.seu.edu.cn/">PALM Lab</a><p>School of Computer Science<br>and Engineering</p></div>
 </div></aside>
 <main>
@@ -63,6 +65,7 @@ const html = `<!doctype html>
     <li>Dempster–Shafer evidence theory</li>
     <li>Neutrosophic set theory</li>
   </ul>
+  <p class="scholar-summary">Google Scholar: <a class="scholar-stats" href="${esc(data.scholar)}" title="Google Scholar · Last checked: ${esc(metrics.updatedAt)}"><span class="scholar-stat"><span>Citations</span><strong data-scholar-citations>${metrics.citations.toLocaleString('en-US')}</strong></span><span class="scholar-stat"><span>H-index</span><strong data-scholar-h-index>${metrics.hIndex}</strong></span></a></p>
   </section>
   <section id="news"><h2><span aria-hidden="true">🔥</span> News</h2><ul class="news news-bullets"><li><time datetime="2026-09">2026.09:</time> I achieved a normalized average score of <strong>84.48</strong> and ranked <strong>1/33</strong> in my major at Southeast University.</li><li><time datetime="2026-08">2026.08:</time> I completed a <strong>comprehensive survey of ensemble clustering</strong>. See <a href="#ensemble-clustering-survey">Preprints</a> for details.</li><li><time datetime="2025-10">2025.10:</time> I received the <strong>First-Class Scholarship</strong> at Southeast University (<strong>Top 10%</strong>).</li></ul></section>
   <section id="publications"><h2><span aria-hidden="true">📘</span> Selected Publications</h2>
@@ -72,6 +75,7 @@ const html = `<!doctype html>
   <section id="honors-and-awards"><h2><span aria-hidden="true">🏆</span> Honors and Awards</h2><ul class="news honors">${data.honors.map(h => `<li><time datetime="${esc(h.date)}">${esc(h.date.replace('-', '.'))}</time><div><span>${esc(h.title)}</span><div class="honor-links">${h.links.map(l => link(l.url, esc(l.label))).join('')}</div></div></li>`).join('\n')}</ul></section>
   <section id="education"><h2><span aria-hidden="true">🎓</span> Education</h2><ul class="education"><li><strong>${link('https://www.seu.edu.cn/', 'Southeast University')}</strong><span>2025.09 - 2028.06 (expected)</span><span>Master's degree</span><span>${link('https://cse.seu.edu.cn/', 'School of Computer Science and Engineering')} · ${link('http://palm.seu.edu.cn/', 'PALM Lab')}</span></li><li><strong>${link('https://www.hainanu.edu.cn/', 'Hainan University')}</strong><span>2021.09 - 2025.06</span><span>Bachelor's degree</span><span>${link('https://cs.hainanu.edu.cn/', 'School of Computer Science and Technology')}</span></li></ul></section>
 </main></div><footer><div>© 2026 Haoye Qiu <span>PALM Lab · Southeast University</span><p class="site-updated">Site last updated: <time datetime="${esc(data.lastUpdated)}">${esc(data.lastUpdated)}</time></p></div></footer>
+<script src="scholar-metrics.js" defer></script>
 </body></html>`;
 const htmlWithExternalLinks = html.replace(/<a\b([^>]*\bhref="https?:\/\/[^\"]*"[^>]*)>/g, '<a$1 target="_blank" rel="noopener noreferrer">');
 fs.writeFileSync(path.join(root,'index.html'), htmlWithExternalLinks);
