@@ -59,7 +59,7 @@
       "code": "https://github.com/haoyeqiu/OLEC-SB",
       "rankings": [
         {
-          "label": "CCF A类会议",
+          "label": "CCF-A类会议",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/DM_CS/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         }
@@ -113,7 +113,7 @@
       "code": "https://github.com/haoyeqiu/Reliable-Co-occurrence-Guided-Partial-Clustering-Ensemble",
       "rankings": [
         {
-          "label": "CCF B类期刊",
+          "label": "CCF-B类期刊",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         },
@@ -141,7 +141,7 @@
       "code": "https://github.com/haoyeqiu/GPEC",
       "rankings": [
         {
-          "label": "CCF A类会议",
+          "label": "CCF-A类会议",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         }
@@ -159,7 +159,7 @@
       "url": "https://doi.org/10.1016/j.fss.2025.109507",
       "rankings": [
         {
-          "label": "CCF C类期刊",
+          "label": "CCF-C类期刊",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         },
@@ -185,7 +185,7 @@
       "url": "https://doi.org/10.1016/j.knosys.2025.113314",
       "rankings": [
         {
-          "label": "CCF C类期刊",
+          "label": "CCF-C类期刊",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         },
@@ -213,7 +213,7 @@
       "url": "https://doi.org/10.1016/j.eswa.2024.125454",
       "rankings": [
         {
-          "label": "CCF C类期刊",
+          "label": "CCF-C类期刊",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         },
@@ -241,7 +241,7 @@
       "url": "https://doi.org/10.1016/j.fss.2024.109135",
       "rankings": [
         {
-          "label": "CCF C类期刊",
+          "label": "CCF-C类期刊",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         },
@@ -269,7 +269,7 @@
       "url": "https://doi.org/10.1016/j.eswa.2024.125246",
       "rankings": [
         {
-          "label": "CCF C类期刊",
+          "label": "CCF-C类期刊",
           "source": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
           "detail": "中国计算机学会推荐国际学术会议和期刊目录，第七版（2026）"
         },
