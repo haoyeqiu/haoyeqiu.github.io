@@ -1,7 +1,7 @@
 {
   "name": "Haoye Qiu",
   "chineseName": "裘昊晔",
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "email": "qhy@seu.edu.cn",
   "github": "https://github.com/haoyeqiu",
   "scholar": "https://scholar.google.com/citations?user=Fl3ulDUAAAAJ&hl=zh-TW",
@@ -287,6 +287,21 @@
       "correspondingAuthors": [
         "Zhe Liu"
       ]
+    }
+  ],
+  "patents": [
+    {
+      "title": "基于样本和特征双加权的特征约简中智c-均值聚类方法",
+      "inventors": [
+        "裘昊晔",
+        "王冬来",
+        "刘潇洋",
+        "袁午田",
+        "张子龙"
+      ],
+      "grantNumber": "CN117727373B",
+      "grantDate": "2024-05-31",
+      "url": "http://epub.cnipa.gov.cn/"
     }
   ]
 }
