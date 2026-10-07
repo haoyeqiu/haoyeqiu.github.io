@@ -1,8 +1,10 @@
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const data = JSON.parse(fs.readFileSync(path.join(root, 'content.json'), 'utf8'));
+const styleVersion = createHash('sha256').update(fs.readFileSync(path.join(root, 'style.css'))).digest('hex').slice(0, 12);
 const metrics = JSON.parse(fs.readFileSync(path.join(root, 'scholar-metrics.json'), 'utf8'));
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link = (url, label) => `<a href="${esc(url)}">${label}</a>`;
@@ -43,7 +45,7 @@ const categories = [...new Set(published.map(p => p.category))];
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haoye Qiu | Southeast University</title><meta name="description" content="Haoye Qiu, second-year master's student at PALM Lab, Southeast University. Research on ensemble clustering, multi-view learning, and uncertainty-aware clustering.">
-<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="style.css?v=${styleVersion}">
 <link rel="icon" type="image/jpeg" href="${esc(data.photo)}">
 </head><body><a class="skip" href="#about-me">Skip to content</a>
 <header class="masthead"><nav class="topnav" aria-label="Main navigation"><a class="home" href="#about-me">Homepage</a><a href="#about-me">About Me</a><a href="#news">News</a><a href="#publications">Selected Publications</a>${underReview.length ? '<a href="#preprints">Preprints</a>' : ''}<a href="#patents">Invention Patents</a><a href="#honors-and-awards">Honors and Awards</a><a href="#education">Education</a><a class="nav-cv" href="assets/files/Haoye_Qiu_CV.pdf?v=2401aae20eae" target="_blank" rel="noopener noreferrer" aria-label="Open CV (PDF) in a new tab">${icon('cv')}<span>CV</span></a></nav></header>
